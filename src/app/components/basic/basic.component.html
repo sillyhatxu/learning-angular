@@ -1,0 +1,56 @@
+<h3>Basic Component</h3>
+<div>{{ msg }}</div>
+<div>{{ msg1 }}</div>
+<div>{{ publicUsername }}</div>
+<div>{{ publicUsername }}</div>
+<div>{{ protectedUserName }}</div>
+<div [title]="title">{{ title }}</div>
+<div>{{ privateUserName }}</div>
+<hr>
+
+<!-- 不解析 -->
+<div>{{ h2 }}</div>
+<!-- 解析 -->
+<span [innerHTML]="h2"></span>
+<hr>
+
+<!-- Object -->
+<div>{{obj.name}}</div>
+<hr>
+
+<!-- List -->
+<h6>list</h6>
+<ul>
+    <li *ngFor="let item of list">{{item}}</li>
+</ul>
+
+<h6>object list</h6>
+<ul>
+    <!-- <li *ngFor="let item of objList">{{item.name}} --- {{item.age}}</li> -->
+    <!-- <li *ngFor="let item of objList; let i = index" [attr.data-index]="i"> -->
+    <li *ngFor="let item of objList; let i = index">
+        {{i}} --- {{item.name}} --- {{item.age}}
+    </li>
+</ul>
+<hr>
+
+<h6>map get value</h6>
+<div>{{testMap.get('a')}}</div>
+<h6>map for loop</h6>
+<ul>
+    <li *ngFor="let item of testMap | keyvalue">
+        {{item.key}} : {{item.value}}
+    </li>
+</ul>
+<hr>
+
+<button (click)="getMsg()">Execute Method</button>
+<hr>
+
+
+<!-- 条件判断语句 -->
+<div *ngIf="btnFlag">show div text</div>
+<button (click)="btnFlag=!btnFlag">chage flag</button>
+<hr>
+<input type="text" (keyup)='keyupFn($event)'>
+<button (click)="run($event)">run</button>
