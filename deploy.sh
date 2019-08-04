@@ -1,4 +1,4 @@
-learningbranch="2.custom component"
+learningbranch="2.custom-component"
 msg="custom component"
 git checkout -b $learningbranch
 git add .
