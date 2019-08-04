@@ -1,5 +1,5 @@
-learningbranch="3.basic"
-msg="basic"
+learningbranch="4.two-way-data-binding"
+msg="双向数据绑定"
 git add .
 git commit -m "$msg"
 git push -u origin master
