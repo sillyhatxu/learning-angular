@@ -1,5 +1,5 @@
-learningbranch="1.hello-world-angular"
-msg="hello world angular"
+learningbranch="2.custom component"
+msg="custom component"
 git checkout -b $learningbranch
 git add .
 git commit -m "$msg"
