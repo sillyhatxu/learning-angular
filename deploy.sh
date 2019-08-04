@@ -1,6 +1,12 @@
 learningbranch="2.custom-component"
 msg="custom component"
-git checkout -b $learningbranch
+exists=`git show-ref refs/heads/$learningbranch`
+if [ -n "$exists" ]; 
+    then
+    git checkout -b $learningbranch
+    else
+    git checkout $learningbranch
+fi
 git add .
 git commit -m "$msg"
 git push -u origin $learningbranch
