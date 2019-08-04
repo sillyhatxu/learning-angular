@@ -3,9 +3,9 @@ msg="custom component"
 exists=`git show-ref refs/heads/$learningbranch`
 if [ -n "$exists" ]; 
     then
-    git checkout -b $learningbranch
-    else
     git checkout $learningbranch
+    else
+    git checkout -b $learningbranch
 fi
 git add .
 git commit -m "$msg"
