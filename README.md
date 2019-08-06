@@ -10,8 +10,14 @@ npm install
 ng serve
 ```
 
+创建组件
 ```
 ng g component components/header
+```
+
+创建服务
+```
+ng g service services/storage
 ```
 
 ### 双向数据引用 FormsModule

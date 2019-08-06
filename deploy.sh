@@ -1,5 +1,5 @@
-learningbranch="6.local-storage"
-msg="angule service for local storage"
+learningbranch="7.request"
+msg="angule request data from server"
 git add .
 git commit -m "$msg"
 git push -u origin master
