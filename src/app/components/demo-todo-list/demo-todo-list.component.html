@@ -8,16 +8,13 @@
 <br>
 <ul>
     <li *ngFor="let item of items; let i = index;" [hidden]="item.status==0">
-            {{item.username}}<button (click)="updateStatus(i,0)">   updateStatus</button>
+        {{item.username}}<button (click)="updateStatus(i,0)"> updateStatus</button>
     </li>
 </ul>
 已经完成
 <br>
 <ul>
-        <li *ngFor="let item of items; let i = index;" [hidden]="item.status==1">
-            {{item.username}}<button (click)="updateStatus(i,1)">   updateStatus</button>
-        </li>
+    <li *ngFor="let item of items; let i = index;" [hidden]="item.status==1">
+        {{item.username}}<button (click)="updateStatus(i,1)"> updateStatus</button>
+    </li>
 </ul>
-
-
-

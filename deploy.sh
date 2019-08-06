@@ -1,5 +1,5 @@
-learningbranch="4.two-way-data-binding"
-msg="双向数据绑定"
+learningbranch="6.local-storage"
+msg="angule service for local storage"
 git add .
 git commit -m "$msg"
 git push -u origin master
