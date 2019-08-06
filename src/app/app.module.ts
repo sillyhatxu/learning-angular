@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BasicComponent } from './components/basic/basic.component';
 import { TwoWayDataBindingComponent } from './components/two-way-data-binding/two-way-data-binding.component';
+import { DemoTodoListComponent } from './components/demo-todo-list/demo-todo-list.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TwoWayDataBindingComponent } from './components/two-way-data-binding/tw
     HeaderComponent,
     FooterComponent,
     BasicComponent,
-    TwoWayDataBindingComponent
+    TwoWayDataBindingComponent,
+    DemoTodoListComponent
   ],
   imports: [
     FormsModule,

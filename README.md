@@ -1,5 +1,15 @@
 # LearningAngular
 
+安装依赖
+```
+npm install
+```
+
+启动服务
+```
+ng serve
+```
+
 ```
 ng g component components/header
 ```

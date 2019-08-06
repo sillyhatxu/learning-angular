@@ -1,0 +1,23 @@
+<h3>todo list</h3>
+
+<input type="text" [(ngModel)]='username' (keyup)=addEnter($event)>
+<button (click)="addData()">Add</button>
+
+<hr>
+正在进行
+<br>
+<ul>
+    <li *ngFor="let item of items; let i = index;" [hidden]="item.status==0">
+            {{item.username}}<button (click)="updateStatus(i,0)">   updateStatus</button>
+    </li>
+</ul>
+已经完成
+<br>
+<ul>
+        <li *ngFor="let item of items; let i = index;" [hidden]="item.status==1">
+            {{item.username}}<button (click)="updateStatus(i,1)">   updateStatus</button>
+        </li>
+</ul>
+
+
+
