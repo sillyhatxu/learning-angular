@@ -9,14 +9,14 @@ import { StorageService } from '../../services/storage.service'; //引入服务
 })
 export class DemoTodoListComponent implements OnInit {
 
-  /* 第一种引入方式 */
+  /* 第一种注入方式 */
   //public storage = new StorageService();
 
   public username: any = ''
 
   public items = []
 
-  /* 推荐引入方式 */
+  /* 推荐注入方式 */
   constructor(private storage: StorageService) {
     console.log(this.storage)
     var todolist = this.storage.getItem("todolist")
