@@ -1,1 +1,14 @@
 <h3>request-from-server</h3>
+<button (click)="requestData()">request</button>
+<ul>
+    <li *ngFor="let item of items; let i = index;">
+        {{item.word}}
+    </li>
+</ul>
+
+<button (click)="requestJsonpData()">request josnp</button>
+<ul>
+    <li *ngFor="let item of jsonpItems; let i = index;">
+        {{item.word}}
+    </li>
+</ul>
