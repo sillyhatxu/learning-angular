@@ -13,7 +13,10 @@ import { DemoTodoListComponent } from './components/demo-todo-list/demo-todo-lis
 
 
 import { StorageService } from './services/storage.service';
-import { RequestFromServerComponent } from './components/request-from-server/request-from-server.component'; //引入服务
+import { RequestFromServerComponent } from './components/request-from-server/request-from-server.component';
+import { PanleAComponent } from './components/panle-a/panle-a.component';
+import { PanleBComponent } from './components/panle-b/panle-b.component';
+import { PanleCComponent } from './components/panle-c/panle-c.component'; //引入服务
 
 
 @NgModule({
@@ -24,7 +27,10 @@ import { RequestFromServerComponent } from './components/request-from-server/req
     BasicComponent,
     TwoWayDataBindingComponent,
     DemoTodoListComponent,
-    RequestFromServerComponent
+    RequestFromServerComponent,
+    PanleAComponent,
+    PanleBComponent,
+    PanleCComponent
   ],
   imports: [/* 当前项目依赖的模块 */
     HttpClientJsonpModule,
