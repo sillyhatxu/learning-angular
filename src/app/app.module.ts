@@ -1,8 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule,JsonpModule } from '@angular/http';
-
+import { HttpClientJsonpModule, HttpClientModule, HttpClient } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,8 +27,8 @@ import { RequestFromServerComponent } from './components/request-from-server/req
     RequestFromServerComponent
   ],
   imports: [/* 当前项目依赖的模块 */
-    HttpModule,
-    JsonpModule,
+    HttpClientJsonpModule,
+    HttpClientModule,
     FormsModule,
     BrowserModule,
     AppRoutingModule

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-import { StorageService } from '../../services/storage.service'; //引入服务
+import { StorageService } from 'src/app/services/storage.service';
 
 @Component({
   selector: 'app-demo-todo-list',
@@ -20,7 +19,7 @@ export class DemoTodoListComponent implements OnInit {
   constructor(private storage: StorageService) {
     console.log(this.storage)
     var todolist = this.storage.getItem("todolist")
-    if(todolist){
+    if (todolist) {
       this.items = todolist
     }
   }
@@ -48,13 +47,13 @@ export class DemoTodoListComponent implements OnInit {
       }
       this.username = ""
       var todoList = this.storage.getItem("todolist")
-      if(todoList){
+      if (todoList) {
         todoList.push(obj)
-        this.storage.setItem("todolist",todoList);
-      }else{
+        this.storage.setItem("todolist", todoList);
+      } else {
         var array = [];
         array.push(obj)
-        this.storage.setItem("todolist",array);
+        this.storage.setItem("todolist", array);
       }
       this.items.push(obj)
     }
@@ -64,12 +63,12 @@ export class DemoTodoListComponent implements OnInit {
     this.items[index].status = status
     var todoList = this.storage.getItem("todolist")
     todoList[index].status = status
-    this.storage.setItem("todolist",todoList);
+    this.storage.setItem("todolist", todoList);
   }
 
   deleteData(index) {
     this.items.splice(index, 1)
   }
 
-  
+
 }

@@ -12,3 +12,10 @@
         {{item.word}}
     </li>
 </ul>
+
+<button (click)="requestDataRXJS()">request rxjs</button>
+<ul>
+    <li *ngFor="let item of rxjsItems; let i = index;">
+        {{item.word}}
+    </li>
+</ul>
