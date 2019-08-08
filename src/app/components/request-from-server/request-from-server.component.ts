@@ -27,13 +27,21 @@ export class RequestFromServerComponent implements OnInit {
   requestData() {
     var _that = this;
     var url = "http://word.xushikuan.com/words"
-    this.http.get(url).subscribe(function (data) {
+    this.http.get(url).subscribe(function (data: { data: any }) {
       console.log(data)
       // _that.items = JSON.parse(data['_body']).data
-      _that.items = data['data']
+      // _that.items = data['data']
+      _that.items = data.data
     }, function (err) {
       console.log(err)
     })
+    // this.http.get(url).subscribe(function (data:{a:string}) {
+    //   console.log(data)
+    //   // _that.items = JSON.parse(data['_body']).data
+    //   _that.items = data.a
+    // }, function (err) {
+    //   console.log(err)
+    // })
   }
 
   requestDataRXJS() {
