@@ -60,3 +60,11 @@ http://localhost:4200/webpack-dev-server/page-a
 http://localhost:4200/webpack-dev-server/page-b
 http://localhost:4200/webpack-dev-server/page-c
 ```
+
+## build
+
+```
+ng build
+```
+
+> 生成dist目录，copy到[learning-angular-container](https://github.com/sillyhatxu/learning-angular-container)
