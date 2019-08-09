@@ -1,0 +1,11 @@
+<app-cart #cart></app-cart>
+<h2>Product Component</h2>
+name: <label>{{ productName }}</label>
+<br>
+<button (click)="updateNameFromCart()">update name from cart</button>
+<br>
+<button (click)="cart.run()">run child component method</button>
+<br>
+<button (click)="executeCartMethod()">execute cart method</button>
+<br>
+<button (click)="getCartData()">get cart data</button>

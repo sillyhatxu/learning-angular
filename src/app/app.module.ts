@@ -16,7 +16,9 @@ import { StorageService } from './services/storage.service';
 import { RequestFromServerComponent } from './components/request-from-server/request-from-server.component';
 import { PanleAComponent } from './components/panle-a/panle-a.component';
 import { PanleBComponent } from './components/panle-b/panle-b.component';
-import { PanleCComponent } from './components/panle-c/panle-c.component'; //引入服务
+import { PanleCComponent } from './components/panle-c/panle-c.component';
+import { ProductComponent } from './components/product/product.component';
+import { CartComponent } from './components/cart/cart.component'; //引入服务
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { PanleCComponent } from './components/panle-c/panle-c.component'; //引�
     RequestFromServerComponent,
     PanleAComponent,
     PanleBComponent,
-    PanleCComponent
+    PanleCComponent,
+    ProductComponent,
+    CartComponent
   ],
   imports: [/* 当前项目依赖的模块 */
     HttpClientJsonpModule,
