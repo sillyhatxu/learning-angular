@@ -1,4 +1,4 @@
-learningbranch="7.Pass-values-and-method-calls-using-the-Input-and-parent-child-components"
+learningbranch="8.Pass-values-and-method-calls-using-the-Input-and-parent-child-components"
 msg="父子组件传值，方法调用"
 git add .
 git commit -m "$msg"
