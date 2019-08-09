@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-panle-c',
@@ -9,7 +9,13 @@ export class PanleCComponent implements OnInit {
 
   constructor() { }
 
+  //EventEmitter实现子组件传值给父组件
+  @Output() toparent = new EventEmitter()
+
   ngOnInit() {
   }
 
+  requestData() {
+    this.toparent.emit('panel-c value')
+  }
 }

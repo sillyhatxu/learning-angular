@@ -1,5 +1,5 @@
-learningbranch="8.Pass-values-and-method-calls-using-the-Input-and-parent-child-components"
-msg="父子组件传值，方法调用"
+learningbranch="9.Pass-values-and-method-calls-using-Output-EventEmitter-and-parent-child-components"
+msg="使用Output EventEmitter 父子组件传值，方法调用"
 git add .
 git commit -m "$msg"
 git push -u origin master

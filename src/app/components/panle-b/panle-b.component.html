@@ -1,1 +1,9 @@
-<p>panle-b works!</p>
+<app-header [title]="title" [name]="name"></app-header>
+<h2>{{ title }} --- {{ name }}</h2>
+<button (click)="requestData()">panel b button</button>
+<ul>
+    <li *ngFor="let item of items; let i = index;">
+        {{item.word}}
+    </li>
+</ul>
+<app-panle-c (toparent)=(requestData($event))></app-panle-c>
