@@ -1,5 +1,10 @@
 # LearningAngular
 
+创建项目
+```
+ng new {projectName}
+```
+
 安装依赖
 ```
 npm install
