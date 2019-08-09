@@ -78,6 +78,7 @@ export class RequestFromServerComponent implements OnInit {
   //后端不允许跨域，可以用这种方式
   requestJsonpData() {
     var _that = this;
+
     // var url = "http://word.xushikuan.com/words?page=1&callback=JSONP_CALLBACK"
     // var url = "http://word.xushikuan.com/words?page=1&callback=__ng_jsonp__.__req0"
     // this.jsonp.get(url).subscribe(function (data) {
@@ -112,16 +113,17 @@ export class RequestFromServerComponent implements OnInit {
 
 
 
-    this.http.jsonp(url, 'callback').subscribe(function (data) {
-      alert("test")
-      console.log(data)
-      // console.log()
-      // _that.items = JSON.parse(data['_body']).data
-      // _that.items = data['data']
-    }, function (err) {
-      alert("test")
-      console.log(err)
-    });
+
+    // var url = "http://word.xushikuan.com/words?page=1&callback=JSONP_CALLBACK"
+    // this.jsonp.get(url).subscribe(function (data) {
+    //   console.log(data)
+    //   // console.log()
+    //   // _that.items = JSON.parse(data['_body']).data
+    //   // _that.items = data['data']
+    // }, function (err) {
+    //   alert("test")
+    //   console.log(err)
+    // });
 
     // let params = new URLSearchParams();
     // params.set('page', "1"); // the user's search value
@@ -170,5 +172,6 @@ export class RequestFromServerComponent implements OnInit {
     //     debugger
     //     console.log(error);
     // });
+
   }
 }

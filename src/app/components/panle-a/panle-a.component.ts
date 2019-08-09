@@ -17,4 +17,12 @@ export class PanleAComponent implements OnInit {
   ngOnInit() {
   }
 
+  run() {
+    alert("panel a alert")
+  }
+
+  getDataFromChild(childData) {
+    this.name = childData
+    alert(childData)
+  }
 }

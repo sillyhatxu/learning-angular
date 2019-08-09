@@ -1,1 +1,5 @@
 <app-header [title]="title" [name]="name"></app-header>
+<h1>panel a</h1>
+<h2>{{ title }} --- {{ name }}</h2>
+<button (click)="run()">panel a button</button>
+<app-footer [run]="run" [getDataFromChild]="getDataFromChild"></app-footer>
