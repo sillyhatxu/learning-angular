@@ -50,3 +50,13 @@ import { TwoWayDataBindingComponent } from './components/two-way-data-binding/tw
 })
 export class AppModule { }
 ```
+
+## 路由切换页面
+
+对应的组件显示到`<router-outlet></router-outlet>`标签中
+
+```
+http://localhost:4200/webpack-dev-server/page-a
+http://localhost:4200/webpack-dev-server/page-b
+http://localhost:4200/webpack-dev-server/page-c
+```

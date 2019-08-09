@@ -1,5 +1,5 @@
-learningbranch="10.Pass-values-and-method-calls-using-ViewChild-and-parent-child-components"
-msg="使用ViewChild 父子组件传值，方法调用"
+learningbranch="10.router"
+msg="使用router"
 git add .
 git commit -m "$msg"
 git push -u origin master

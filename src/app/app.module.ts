@@ -18,7 +18,10 @@ import { PanleAComponent } from './components/panle-a/panle-a.component';
 import { PanleBComponent } from './components/panle-b/panle-b.component';
 import { PanleCComponent } from './components/panle-c/panle-c.component';
 import { ProductComponent } from './components/product/product.component';
-import { CartComponent } from './components/cart/cart.component'; //引入服务
+import { CartComponent } from './components/cart/cart.component';
+import { PageAComponent } from './components/page-a/page-a.component';
+import { PageBComponent } from './components/page-b/page-b.component';
+import { PageCComponent } from './components/page-c/page-c.component'; //引入服务
 
 
 @NgModule({
@@ -34,7 +37,10 @@ import { CartComponent } from './components/cart/cart.component'; //引入服务
     PanleBComponent,
     PanleCComponent,
     ProductComponent,
-    CartComponent
+    CartComponent,
+    PageAComponent,
+    PageBComponent,
+    PageCComponent
   ],
   imports: [/* 当前项目依赖的模块 */
     HttpClientJsonpModule,
